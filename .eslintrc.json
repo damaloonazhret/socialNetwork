@@ -18,7 +18,7 @@
     },
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["./tsconfig.json", "./tsconfig.node.json"]
+    "project": ["./tsconfig.json"]
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
@@ -28,5 +28,6 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "ignorePatterns": ["vite.config.ts", "dist", "node_modules"]
 }
