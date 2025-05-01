@@ -10,7 +10,7 @@ export const Button = ({ children, onClick }: TButtonProps) => {
   return (
     <button className={styles.button} onClick={onClick}>
       {children}
-      test auth
+      test auth auth test
     </button>
   );
 };
