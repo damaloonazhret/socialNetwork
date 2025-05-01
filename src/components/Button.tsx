@@ -1,7 +1,6 @@
 import styles from './Button.module.css';
 import type { ReactNode } from 'react';
 
-
 type TButtonProps = {
   children: ReactNode;
   onClick?: () => void;
