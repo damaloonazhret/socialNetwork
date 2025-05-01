@@ -10,6 +10,7 @@ export const Button = ({ children, onClick }: TButtonProps) => {
   return (
     <button className={styles.button} onClick={onClick}>
       {children}
+      children
     </button>
   );
 };
