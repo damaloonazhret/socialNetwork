@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ignore-pattern 'vite.config.ts'",
     "lint:file": "eslint",
     "preview": "vite preview",
     "format": "prettier --write .",
