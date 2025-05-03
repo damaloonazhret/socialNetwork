@@ -21,8 +21,8 @@ jobs:
           OPENAI_API_ENDPOINT: https://api.openai.com/v1
           max_tokens: 10000
           MAX_PATCH_LENGTH: 10000
-          IGNORE_PATTERNS: /node_modules/**/*,*.md
-          INCLUDE_PATTERNS: *.js,*.ts,*.jsx,*.tsx
+          IGNORE_PATTERNS: "/node_modules/**/*,*.md"
+          INCLUDE_PATTERNS: "*.js,*.ts,*.jsx,*.tsx"
 
           # Авторский стиль и правила
           PROMPT: |
