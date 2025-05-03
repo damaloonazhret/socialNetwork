@@ -7,8 +7,12 @@ type TButtonProps = {
 };
 
 export const Button = ({ children, onClick }: TButtonProps) => {
+  const handleClick = () => {
+    console.log('click');
+    if (onClick) onClick();
+  };
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={styles.button} onClick={handleClick}>
       {children}
       test auth auth test
     </button>
