@@ -31,6 +31,14 @@ export const Button = ({ children, onClick }: TButtonProps) => {
     if (onClick) onClick();
     if (onClick) onClick();
     if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
   };
   return (
     <button className={styles.button} onClick={handleClick}>
