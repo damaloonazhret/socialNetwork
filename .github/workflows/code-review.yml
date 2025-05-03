@@ -20,6 +20,7 @@ jobs:
           LANGUAGE: Russian
           OPENAI_API_ENDPOINT: https://api.openai.com/v1
           max_tokens: 10000
+          DEBUG: true
           MAX_PATCH_LENGTH: 10000
           IGNORE_PATTERNS: "/node_modules/**/*,*.md"
           INCLUDE_PATTERNS: "*.js,*.ts,*.jsx,*.tsx"
