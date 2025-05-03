@@ -9,6 +9,19 @@ type TButtonProps = {
 export const Button = ({ children, onClick }: TButtonProps) => {
   const handleClick = () => {
     console.log('click');
+    console.log('click');
+    console.log('click');
+    console.log('click');
+    console.log('click');
+    console.log('click');
+    console.log('click');
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
+    if (onClick) onClick();
     if (onClick) onClick();
   };
   return (

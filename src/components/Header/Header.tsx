@@ -7,6 +7,12 @@ type TProps = {
 
 export const Header = ({ title }: TProps) => {
   const { navigate } = useNavigation();
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
 
   return (
     <header className={styles.header}>
