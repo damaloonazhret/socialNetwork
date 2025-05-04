@@ -5,6 +5,12 @@ type TProps = {
 };
 
 export const Sidebar = ({ userName }: TProps) => {
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
+  console.log('as');
   return (
     <div className={styles.sidebar}>
       <div className={styles.userProfile}>
