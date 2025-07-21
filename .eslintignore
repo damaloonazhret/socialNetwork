@@ -1,0 +1,5 @@
+vite.config.ts
+dist
+node_modules
+*.config.js
+*.config.ts 

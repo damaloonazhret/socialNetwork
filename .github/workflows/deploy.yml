@@ -1,16 +1,28 @@
 name: Deploy to Netlify
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches:
       - develop
+      - main
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+      - '.prettierrc'
+      - '.prettierignore'
+      - 'README.md'
 
 jobs:
   build-and-deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Debug - Print branch name
+        run: echo "Current branch is ${{ github.ref_name }}"
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -23,6 +35,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Debug - List dist directory
+        run: ls -la dist
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
